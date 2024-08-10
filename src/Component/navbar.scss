@@ -1,0 +1,47 @@
+#Nav {
+  z-index: 1000;
+  top: 0;
+
+  position: fixed;
+
+  #Menue {
+    @media (max-width: 765px) {
+      display: block !important;
+    }
+  }
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #ffffff;
+}
+#NavBar {
+  @media (max-width: 992px) {
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    gap: 1px;
+    background-color: #5a5a5a;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  @media (max-width: 765px) {
+    display: none !important;
+  }
+  svg {
+    color: lightgray;
+  }
+  a {
+    @media (max-width: 992px) {
+      color: white;
+    }
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
+#NavIconContainer {
+  background-color: #e0f7fa; /* Soft Blue */
+  border-radius: 8px;
+  padding: 10px;
+}

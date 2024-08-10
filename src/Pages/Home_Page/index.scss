@@ -1,0 +1,139 @@
+/* Hero Section Container */
+#HeroSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px; /* Adding some padding for better spacing */
+  background-color: #e3f2fd; /* Light Blue background to complement gradient */
+}
+
+/* Hero-left Section */
+.hero-left {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #424242; /* Dark Gray for readability */
+  }
+
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #212121;
+  }
+}
+
+.Hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Hero-right img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 80vh;
+  height: 80vh;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.bg-color {
+  background-color: #c8e6c9;
+}
+.AboutmeSection {
+  background-color: #f5f5f5; /* Light Gray background for contrast and readability */
+  padding: 40px 20px; /* Add some padding for better spacing */
+
+  .left-Aboutme {
+    .left-Aboutme-content {
+      .Parent {
+        height: 15px;
+        width: 100%;
+        background-color: #cfd8dc; /* Light Grayish Blue for progress bars */
+        .Child-html {
+          height: 100%;
+          width: 100%;
+          background-color: #1e88e5; /* Blue for HTML */
+        }
+        .Child-css {
+          height: 100%;
+          width: 90%;
+          background-color: #26c6da; /* Light Cyan for CSS */
+        }
+        .Child-js {
+          height: 100%;
+          width: 80%;
+          background-color: #fbc02d; /* Yellow for JavaScript */
+        }
+        .Child-react {
+          height: 100%;
+          width: 50%;
+          background-color: #f44336; /* Red for React */
+        }
+        .Child-english {
+          height: 100%;
+          width: 70%;
+          background-color: #8e24aa; /* Purple for English */
+        }
+      }
+    }
+    .left-Aboutme-header {
+      .Aboutme-Info {
+        span {
+          font-weight: 700; /* Semi-bold for labels */
+          color: #212121; /* Dark Gray for labels */
+        }
+      }
+      .Aboutme-img {
+        img {
+          height: 250px;
+          object-fit: cover;
+          border: 5px solid #ffffff; /* White border for the image */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+      }
+    }
+  }
+  .right-Aboutme {
+    .right-Aboutme-header {
+      .UnderLine {
+        height: 4px;
+        background-color: #6a11cb; /* Use a color from the Navbar gradient */
+      }
+    }
+  }
+}
+.my-cv-button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  padding: 20px 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.my-cv-button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.my-cv-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7);
+}
+
+.my-cv-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
