@@ -1,11 +1,12 @@
+import ContactFourm from '../../Component/ContactFourm'
 import Navbar from '../../Component/navbar'
-import "./index.scss"
+import './index.scss'
 
 export default function ContactPage() {
   return (
     <>
       <Navbar></Navbar>
-      <div>this is contact page</div>
+      <ContactFourm></ContactFourm>
     </>
   )
 }

@@ -1,3 +1,11 @@
 .my-Services {
   height: 100vh;
 }
+#MyServices {
+  background-color: #87cefa;
+  .card {
+    background-color: #fff3f3;
+    color: #333333;
+    border: 1.5px solid #6a11cb;
+  }
+}

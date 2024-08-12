@@ -1,7 +1,18 @@
+import { useContext } from 'react'
 import AboutMeimg from '../assets/451957585_1006411420937828_8433011604308500409_n.jpg'
+import MyCv from './MyCv'
+import { MyCvContext } from './Context'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
 export default function AboutMe() {
+  const { Cv, SetCv } = useContext(MyCvContext)
+  let ShowMyCv = () => {
+    SetCv(!Cv)
+    console.log(Cv)
+  }
   return (
     <>
+      {Cv ? <MyCv></MyCv> : null}
       <div className="mt-3 p-5 bg-color ">
         <div className="shadow-lg AboutmeSection container d-flex flex-wrap flex-row p-5">
           <div className="left-Aboutme col-lg-6 col-md-6 col-12 d-flex flex-wrap flex-column">
@@ -76,8 +87,27 @@ export default function AboutMe() {
               </h2>
             </div>
           </div>
-          <div className="col-12 d-flex justify-content-center align-items-center">
-            <button className="my-cv-button mt-3 ">My CV</button>
+          <div className="col-12 d-flex justify-content-center align-items-center flex-column">
+            <div className="d-flex flex-row gap-3 fs-3 mt-2">
+              <a
+                href="https://web.facebook.com/profile.php?id=100094006208154"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a
+                href="https://github.com/Amrwebprog"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+            <button
+              className="my-cv-button mt-3 "
+              onClick={ShowMyCv}
+            >
+              My CV
+            </button>
           </div>
         </div>
       </div>

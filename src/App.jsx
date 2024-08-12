@@ -14,6 +14,7 @@ export default function App() {
             index
             element={<HomePage></HomePage>}
           />
+
           <Route
             path="services"
             element={<ServicesPage></ServicesPage>}

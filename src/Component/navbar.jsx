@@ -54,7 +54,7 @@ export default function Navbar() {
         </div>
       </div>
       {NavMenue ? (
-        <div className="position-fixed mt-5 end-0 d-flex  gap-3 bd-highlight flex-column p-3">
+        <div className="position-fixed icon-Menue mt-5 end-0 d-flex  gap-3 bd-highlight flex-column p-3">
           <div id="NavIconContainer">
             <Link to="/">
               <FontAwesomeIcon icon={faHouse}></FontAwesomeIcon>
